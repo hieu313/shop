@@ -1,0 +1,261 @@
+#main {
+
+}
+
+#header {
+
+}
+.open {
+    display: block;
+}
+
+/*! Bootstrap */
+/** Navigation */
+#header .nav-shopify {    
+    color: rgba(250, 104, 10, 0.7);
+    font-size: 3rem !important;
+    line-height: 12.5rem;
+    padding-left: 1.2rem;
+}
+#header .nav-shopify a {
+    color: rgba(250, 104, 10, 0.7);
+}
+#header .navbar {
+    border-radius: 0 !important;
+    height: 12.5rem;
+}
+#header .navbar .container-fluid {
+    padding-left: 13rem;
+    padding-right: 2.5rem;
+}
+#header .navbar-nav .active a {
+    background-color: rgba(0,0,0,0.2) !important;
+    padding: 0.8rem;
+    margin: 0.7rem;
+}
+#header .navbar-nav .download {
+    position: relative;
+    width: 10rem !important;
+}
+#header .navbar-nav .download:hover {
+    color: #fff !important;
+    cursor: pointer
+}
+#header .navbar-nav .download > p {
+    color: #9D9D9D;
+    position: absolute;
+    top: 1.5rem;
+}
+#header .navbar-nav .dropdown-menu li a {
+    font-size: 1.4rem!important;
+    padding: 1.5rem 1rem 1.5rem 2rem !important;
+}
+
+#header .form-control {
+    width: 60% !important;
+    position: absolute;
+    top: 6.25rem;
+    left : 25rem;
+}
+#header .download {
+    position: relative;
+}
+#header .download:hover > p {
+    color: #fff;
+}
+/* làm hiện download-app */
+#header .download:hover .download-app {
+    display: block;
+}
+/* khi di chuột xuống có khoảng trắng nên không hiện */
+#header .download-app::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}
+#header .download-app {
+    position: absolute;
+    top: 4.5rem;
+    background-color: #fff;
+    height: 18.5rem;
+    width: 16.5rem;
+    z-index: 1;
+    text-align: center;
+    animation: fadeIn ease-in 0.5s;
+    display: none;
+}
+
+#header .download-img {
+    height: 16rem;
+    width: 16rem;
+    padding: .4rem .4rem 1rem .4rem;
+}a
+#header .download-tools {
+    display: block;
+    margin-left: 1.4rem;
+}
+#header .download-tool_img {
+    height: 1.8rem;
+    width: 7rem;
+}
+#header .search-btn {
+    background-color:rgba(0,0,0,0.8);
+    position: absolute;
+    right: 18%;
+    top: 6.15rem;
+    display: inline-block;
+    color:#fff !important;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    line-height: 3.4rem;
+    text-align: center;
+    border-radius: 4px ;
+}
+#header .nav_body-menu {
+    position: absolute;
+    top: 6.15rem;
+    left: 14rem;
+    width: 25%;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+/** ACCOUNT */
+#header .acc {
+    position: absolute;
+    width: 10%;
+    height: 50px;
+    display: flex;
+    right: 1rem;
+    top: 0rem;
+    color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    justify-content: space-between;
+}
+#header .avatar-user {
+    width:25px;
+    height:25px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left: 0.1rem;
+}
+/* ! START SIGN IN MODAL */
+#modal .modal-background {
+    position: fixed; /*khi sử dụng sẽ phủ lên toàn bộ giao diện*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+}
+#modal .modal-container{
+    animation: modalShowing ease .5s;
+    background-color: #fff;
+    width: 54rem;
+    min-height: 34rem;
+    margin: 3rem;
+    border: 1px solid rgb(188 232 241);
+    border-radius: 4px;
+}
+
+#modal .modal-header {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-radius: 0 4px;
+    border: 1px solid rgb(188 232 241);
+    position: relative;
+    padding: 1rem 1.5rem;
+}
+#modal .close-modal {
+    position: absolute;
+    right: 1%;
+    top:6%;
+    height: 3rem;
+    width: 3rem; 
+    text-align:center;
+    line-height: 3rem;
+    background-color: #d9edf7;
+    border: 0;
+}
+#modal .close-modal:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#modal .modal-title {
+    font-size: 1.6rem ;
+    line-height: 100%;
+}
+
+#modal .sign_in-modal-body {
+    padding: 3rem 1.5rem 1.5rem;
+    font-size: 1.4rem;
+}
+#modal .sign_in-modal-body-input {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    margin-bottom: 2.5rem;
+    color: rgba(51, 51, 51, .7);
+    border-radius: 4px;
+
+}
+#modal .sign_in-modal-body-input > div {
+    padding: .6rem 1.2rem;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+}
+#modal #remember {
+    margin-left: 2rem ;
+}
+#modal .checkbox {
+    margin-bottom: 1rem;
+    font-weight: 100;
+    padding: .7rem 2rem 0 0 ;
+}
+#modal .sign_in-modal-body-login {
+    margin-bottom: 1.5rem;
+}
+#modal .change-into-sign_in-modal,
+#modal .change-into-sign_up-modal {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,0.4);
+}
+/* ! START SIGN IN MODAL */
+
+#modal .sign_up-modal-body-input {
+    padding: 1.5rem;    
+}
+#modal .form-group {
+    display: block;
+}
+#modal .sign-up-modal-body-sign_up {
+    display: flex;
+}
+/* ! KEYFRAME */
+@keyframes modalShowing {
+    from {
+        transform: translateY(-13rem);
+        opacity:0
+    }
+    to {
+        transform: translateY(0);
+        opacity:1
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

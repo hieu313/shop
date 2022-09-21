@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "hieunm3103@gmail.com",
+      "username": "minhhieu_313",
+      "fullname": "Nguyễn Minh Hiếu",
+      "password": "nguyenhieu313",
+      "avatarSrc": "https://cf.shopee.vn/file/23fa9c45d26e3a9902d1f5be9d5da3b7_tn"
+    },
+    {
+      "email": "",
+      "username": "",
+      "fullname": "",
+      "password": "",
+      "avatarSrc": "",
+      "id": 2
+    }
+  ],
+  "items": []
+}
